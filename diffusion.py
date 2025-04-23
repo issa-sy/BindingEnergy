@@ -2,10 +2,10 @@ import numpy as np
 import math
 
 # Constantes physiques
-kB = 8.617333262145e-5  # eV/K
+kB = 8.617343e-5  # eV/K
 D0 = 0.03  # cm²/s (préfacteur)
 
-# Données du tableau 6
+# Données du tableau
 defauts = {
     "V": {"n": -1, "p": 0, "Em": 3.0, "D_300": 1.2e-52, "D_1423": 7.1e-13},
     "I": {"n": 1, "p": 0, "Em": 0.7, "D_300": 5.2e-14, "D_1423": 1.0e-4},
