@@ -7,7 +7,7 @@ a0 = 0.547  # nm
 Omega = a0**3 / 4  # nm³
 b = 0.116  # nm
 Ef_v = 2.5  # eV (énergie de formation d'un défaut Schottky)
-T = 1250+273  # °C (température)
+T = 1250+273  # °C (température en K)
 
 # Énergie de surface γ (Éq. 19) en J/m², convertie en eV/nm²
 gamma_Jm2 = 0.85 - 1.4e-4 * T  # J/m²

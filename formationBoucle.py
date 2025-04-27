@@ -7,9 +7,9 @@ a0 = 0.547  # nm
 Omega = a0**3 / 4  # nm³
 b = 0.116  # nm
 mu = 87 # GPa
-Ef_I = 10  # eV (énergie de formation d'un SIA, valeur arbitraire)
+Ef_I = 10  # eV (Lors de cette étude, l'énergie de formation d'un SIA n’a pu être trouvée dans la littérature et nous lui avons donc attribué une valeur arbitrairement)
 
-# Fonction pour le rayon Rn (Éq. non numérotée dans l'image)
+# Fonction pour le rayon Rn 
 def rayon(n):
     R = np.zeros_like(n, dtype=float)
     n_boucles = n >= 1
