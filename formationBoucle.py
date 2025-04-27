@@ -6,8 +6,7 @@ import pandas as pd  # Bibliothèque pour l'export Excel
 a0 = 0.547  # nm
 Omega = a0**3 / 4  # nm³
 b = 0.116  # nm
-mu_GPa = 87  # GPa
-mu = 87 
+mu = 87 # GPa
 Ef_I = 10  # eV (énergie de formation d'un SIA, valeur arbitraire)
 
 # Fonction pour le rayon Rn (Éq. non numérotée dans l'image)
@@ -38,8 +37,8 @@ print("| n | R (nm) | F (eV) |")
 print("|---|-------|--------|")
 for n, R, F in zip(n_values, R_values, F_values):
     print(f"| {n} | {R:.4f} | {F:.4f} |")
-"""
-# Création d'un DataFrame pandas pour l'export
+
+"""# Création d'un DataFrame pandas pour l'export
 data = {
     "n": n_values,
     "R (nm)": R_values,
