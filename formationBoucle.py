@@ -1,13 +1,13 @@
 import numpy as np
 import matplotlib.pyplot as plt
-import pandas as pd  # Bibliothèque pour l'export Excel
+import pandas as pd  
 
 # Paramètres physiques
 a0 = 0.547  # nm
 Omega = a0**3 / 4  # nm³
 b = 0.116  # nm
 mu = 87 # GPa
-Ef_I = 10  # eV (Lors de cette étude, l'énergie de formation d'un SIA n’a pu être trouvée dans la littérature et nous lui avons donc attribué une valeur arbitrairement)
+Ef_I = 10  # eV  l'énergie de formation d'un SIA 
 
 # Fonction pour le rayon Rn 
 def rayon(n):
