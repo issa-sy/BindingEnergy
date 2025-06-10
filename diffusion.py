@@ -13,13 +13,13 @@ defauts = {
     "V2Kr": {"n": -2, "p": 1, "Em": 4.5, "D_300": 7.6e-78, "D_1423": 3.5e-18}
 }
 
-T_vals = [300, 1423]  # Températures en K
+T_vals = [300,1523]  # Températures en K
 
 print("Vérification des coefficients de diffusion :")
 for nom, data in defauts.items():
     Em = data["Em"]
     for T in T_vals:
         D_calc = D0 * math.exp(-Em / (kB * T))
-        D_ref = data[f"D_{T}"]
-        erreur = abs(D_calc - D_ref) / D_ref * 100 if D_ref != 0 else np.nan
-        print(f"{nom} à {T}K : D_calc = {D_calc:.2e} cm²/s, D_ref = {D_ref:.2e}, erreur = {erreur:.2f}%")
+        #D_ref = data[f"D_{T}"]
+        #erreur = abs(D_calc - D_ref) / D_ref * 100 if D_ref != 0 else np.nan
+        print(f"{nom} à {T}K : D_calc = {D_calc:.2e} cm²/s %")
